@@ -28,7 +28,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="frm-white">
           <% @reviews.each do |review| %>
               <tr>
                 <td>
@@ -66,7 +66,10 @@
     <br>
 	<div class="col-md-4">
 
-		<div class="frm"> 
+		<div class="frm-white"> 
+		<div class="detail-overview-hearts">
+                <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @street_food.get_upvotes.size %></strong> people love it
+            </h4></div>
 		  <%= link_to "Give Heart", like_street_food_path(@street_food), class: "btn btn-success", method: :put %>
 
 			  <%= link_to "Downvote", dislike_street_food_path(@street_food), 
@@ -77,27 +80,22 @@
           <%= @street_food.name.capitalize %>
       </strong></h2><%= social_share_button_tag(@street_food.name) %>
 
-		<div class="detail-overview-hearts">
-                <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @street_food.get_upvotes.size %></strong> people love it
-            </h4></div>
-            <br>
-    
-            <br>
     <div class="star-rating" data-score= <%= @avg_rating %> ></div>
     <p><%= "#{@reviews.length} reviews" %></p>
 
-    <p>
+    <div class="frm-white">
+	<p>
       <strong>Address:</strong>
       <%= @street_food.address.capitalize %>
-    </p>
-
-    <%= link_to "Write a Review", new_street_food_review_path(@street_food), class: "btn btn-primary" %>
-
-    <br>
+    </p></div>
     <br>
 
+    <%= link_to "Write a Review", new_street_food_review_path(@street_food), class: "btn btn-success" %>
+
+    <br>
+<br>
     <iframe
-    width="230"
+    width="296"
     height="230"
     frameborder="1" style="border:1"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ7BphNq_tVYF9JucYg93sM_xkeuMwR0w
@@ -109,8 +107,8 @@
 </div>
 </div>
 </div>
-<%= link_to 'Edit', edit_street_food_path(@street_food) %> |
-<%= link_to 'Back', street_foods_path %>
+<%= link_to 'Edit', edit_street_food_path(@street_food), class: "btn btn-link" %> |
+<%= link_to 'Back', street_foods_path, class: "btn btn-link" %>
 
 <script>
   $('.star-rating').raty({

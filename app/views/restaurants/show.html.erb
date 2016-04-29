@@ -28,7 +28,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="frm-white">
           <% @reviews.each do |review| %>
               <tr>
                 <td>
@@ -65,7 +65,10 @@
     <br>
     <br>
     <div class="col-md-4">
-     <div class="frm"> 
+     <div class="frm-white"> 
+	 <div class="detail-overview-hearts">
+                <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @restaurant.get_upvotes.size %></strong> people love it
+            </h4></div>
       <%= link_to "Give Heart", like_restaurant_path(@restaurant), class: "btn btn-success", method: :put %>
 
 		  <%= link_to "Downvote", dislike_restaurant_path(@restaurant), 
@@ -76,14 +79,11 @@
           <%= @restaurant.name.capitalize %>
       </strong></h2><%= social_share_button_tag(@restaurant.name) %>
 
-
-    <div class="detail-overview-hearts">
-                <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @restaurant.get_upvotes.size %></strong> people love it
-            </h4></div>
             <br>
     <div class="star-rating" data-score= <%= @avg_rating %> ></div>
     <p><%= "#{@reviews.length} reviews" %></p>
 
+	<div class="frm-white">
     <p>
       <strong>Description:</strong>
       <%= @restaurant.description.capitalize %>
@@ -122,15 +122,15 @@
     <p>
       <strong>Speciality:</strong>
       <%= @restaurant.speciality %>
-    </p>
+    </p></div>
 
-    <%= link_to "Write a Review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+    <%= link_to "Write a Review", new_restaurant_review_path(@restaurant), class: "btn btn-success" %>
 
     <br>
     <br>
 
     <iframe
-    width="230"
+    width="296"
     height="230"
     frameborder="1" style="border:1"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ7BphNq_tVYF9JucYg93sM_xkeuMwR0w
@@ -139,6 +139,7 @@
 
   <br>
   <br>
+  <div class="frm-white">
   <p>
       <strong>Take Reservation:</strong>
       <%= @restaurant.reservation %>
@@ -153,6 +154,7 @@
       <strong>Ambience:</strong>
       <%= @restaurant.ambience %>
     </p>
+	</div>
 
   </div>
 </div>
@@ -160,8 +162,8 @@
 
     </div>
   </div>
-  <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+  <%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
+<%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
 </div>
 
 

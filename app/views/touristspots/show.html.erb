@@ -30,7 +30,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="frm-white">
           <% @reviews.each do |review| %>
               <tr>
                 <td>
@@ -68,23 +68,22 @@
     <br>
 	<div class="col-md-4">
 
-		<div class="frm"> 
-		  <%= link_to "Give Heart", like_street_food_path(@touristspot), class: "btn btn-success", method: :put %>
-
-			  <%= link_to "Downvote", dislike_street_food_path(@touristspot), 
-				class: "btn btn-link", method: :put %>
-		</div>
-      
-      <h2><strong>
-          <%= @touristspot.name.capitalize %>
-      </strong></h2><%= social_share_button_tag(@touristspot.name) %>
-
+		<div class="frm-white"> 
 		<div class="detail-overview-hearts">
                 <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @touristspot.get_upvotes.size %></strong> people love it
             </h4></div>
-            <br>
-    
-            <br>
+		  <%= link_to "Give Heart", like_touristspot_path(@touristspot), class: "btn btn-success", method: :put %>
+
+			  <%= link_to "Downvote", dislike_touristspot_path(@touristspot), 
+				class: "btn btn-link", method: :put %>
+		</div>
+      
+      <p><h2><strong>
+          <%= @touristspot.name.capitalize %>
+      </strong></h2><%= social_share_button_tag(@touristspot.name) %></p>
+
+		
+    <div class="frm-white">
     <div class="star-rating" data-score= <%= @avg_rating %> ></div>
     <p><%= "#{@reviews.length} reviews" %></p>
 
@@ -97,14 +96,15 @@
       <strong>Short Info:</strong>
       <%= @touristspot.shortinfo.capitalize %>
     </p>
+	</div>
 
-    <%= link_to "Write a Review", new_touristspot_review_path(@touristspot), class: "btn btn-primary" %>
+    <%= link_to "Write a Review", new_touristspot_review_path(@touristspot), class: "btn btn-success" %>
 
     <br>
     <br>
 
     <iframe
-    width="230"
+    width="296"
     height="230"
     frameborder="1" style="border:1"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ7BphNq_tVYF9JucYg93sM_xkeuMwR0w
@@ -116,9 +116,8 @@
 </div>
 </div>
 </div>
-
-<%= link_to 'Edit', edit_touristspot_path(@touristspot) %> |
-<%= link_to 'Back', touristspots_path %>
+	<%= link_to 'Edit', edit_touristspot_path(@touristspot), class: "btn btn-link" %> |
+	<%= link_to 'Back', touristspots_path, class: "btn btn-link" %>
 
 <script>
   $('.star-rating').raty({
