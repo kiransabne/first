@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
 
   resources :restaurants do
@@ -34,14 +35,25 @@ Rails.application.routes.draw do
 		put "dislike", to: "places#downvote"
 	end
 end
+  
+  resources :touristspots do
+	collection do
+		get 'search'
+	end
+	resources :reviews, except: [:show, :index]
+	member do
+		put "like", to: "touristspots#upvote"
+		put "dislike", to: "touristspots#downvote"
+	end
+	end
 
-
+  get 'welcome/index'
 
   get 'pages/about'
 
   get 'pages/contact'
 
-  root 'restaurants#index'
+  root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
