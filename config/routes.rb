@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   end
   end
   
+  post '/search/:query' => 'search#index'
+
   resources :places do
 	collection do
 		get 'search'
@@ -52,6 +54,8 @@ end
   get 'pages/about'
 
   get 'pages/contact'
+  get 'search' => 'search#index'
+
 
   root 'welcome#index'
 

@@ -25,6 +25,8 @@ gem 'devise'
 gem "mini_magick"
 gem 'searchkick', '0.6.3'
 gem 'azure', '0.6.4'
+gem 'elasticsearch-extensions'
+
 gem 'carrierwave-azure'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'omniauth-facebook'
