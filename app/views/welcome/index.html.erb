@@ -5,29 +5,19 @@
 						<div class="col-md-12 col-sm-12 text-center">
 							<p class="lp-banner-browse-txt">Browse Anything!</p>
 							<h1>Discover your City</h1>
+							<br>
+							<br>
+							<%= form_tag search_path, method: :get, class: "navbar-form navbar-center" do %>
+							<p>
+							  <%= hidden_field_tag :section, params[:section], value: "all" %>
+							  <%= text_field_tag :q, params[:q], class: "form-control" %>
+							  <%= submit_tag "Search", name: nil, class: "btn btn-default" %>
+							</p>
+						  <% end %>
 						</div>
-						<div class="col-md-8 col-xs-12 col-md-offset-2 col-sm-offset-0">
-							<div class="lp-search-bar" style="opacity: 1;">
-								<form method="post" action="search">
-									<div class="lp-search-bar-left">
-														
-										<input type="text" placeholder="What is your Interest?" name="keywords" class="lp-search-input lp-home-search-input">
-									</div>
-									<div class="lp-search-bar-right">
-										<input type="submit" value="Search" class="lp-search-btn">
-										<i class="icons8-search lp-search-icon"></i>
-									</div>
-									<div class="clearfix"></div> <!-- ../clearfix -->
-												
-								</form>
-							</div><!-- ../search-bar -->
-							<div class="text-center lp-search-description">
-								<p>Hav’nt any idea, let’s explore best &amp; hot <br>
-								deals you are interested in
-								</p>
-							</div>
 						</div>
 					</div>
 				</div>
+	
 			</div>
 		</div>
