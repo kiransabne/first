@@ -268,5 +268,6 @@ img {
 }
 
 a {
-    color: #18bc9c;
+    color: white;
 }
+

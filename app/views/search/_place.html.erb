@@ -1,1 +1,13 @@
-<%= place.name %>
+<div class="row">
+  <% @places.each do |place| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(place.placesvisited.url), place %>
+          <div class="caption">
+            <h3><%= link_to place.name.capitalize, place %></h3>
+            <p><%= place.address.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>

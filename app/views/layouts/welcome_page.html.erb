@@ -8,6 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render 'layouts/navbarw' %>
 	<div class="container-fluid">
 		<% flash.each do |name, msg| %>
 			<% if msg.is_a?(String) %>

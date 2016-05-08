@@ -1,1 +1,16 @@
-<%= touristspot.name %>
+
+  <div class="row">
+  <% @touristspots.each do |touristspot| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(touristspot.tourist.url), touristspot %>
+          <div class="caption">
+            <h3><%= link_to touristspot.name.capitalize, touristspot %></h3>
+            <p><%= touristspot.description.capitalize %></p>
+            <p><%= touristspot.location.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+

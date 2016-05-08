@@ -1,1 +1,13 @@
-<%= street_food.name %>
+<div class="row">
+  <% @street_foods.each do |street_food| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(street_food.streetfoods.url), street_food %>
+          <div class="caption">
+            <h3><%= link_to street_food.name.capitalize, street_food %></h3>
+            <p><%= street_food.address.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
