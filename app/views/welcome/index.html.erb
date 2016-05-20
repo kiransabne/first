@@ -29,7 +29,7 @@
 					<div class="col-md-12">
 						<ul class="lp-home-categoires margin-top-subtract-55 padding-left-0">
 							<li>
-								<a href="http://diamond4.cloudapp.net:3000/restaurants" class="lp-border-radius-5">	
+								<a href="http://socialye.cloudapp.net:3000/restaurants" class="lp-border-radius-5">	
 									<span>
 									<!-- Food icon by Icons8 -->
 									<img class="icon icons8-Food" src="http://diamond4.blob.core.windows.net/icons/dine.png" alt="Food"><br>
@@ -69,3 +69,23 @@
 				</div>
 			</div>
 		</div>
+
+<div class="container">
+ <h2> NearBy Restaurants </h2>
+  <div class="center">
+  <div class="row">
+  <% @restaurants.limit(5).each do |restaurant| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(restaurant.image.url), restaurant %>
+          <div class="caption">
+            <h3><%= link_to restaurant.name.capitalize, restaurant %></h3>
+            <p><%= restaurant.description.capitalize %></p>
+            <p><%= restaurant.city.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
