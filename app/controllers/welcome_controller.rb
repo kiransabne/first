@@ -4,9 +4,15 @@ class WelcomeController < ApplicationController
   layout "welcome_page"
 
   def index
-    @restaurants = Restaurant.all
+	visitor_latitude = request.location.latitude
+	visitor_longitude = request.location.longitude
+	@restaurants = Restaurant.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
 	@places = Place.all
 	@touristspots = Touristspot.all
 	@street_foods = StreetFood.all
+  end
+
+  def show
+	@restaurant = Restaurant.find(params[:id])
   end
 end

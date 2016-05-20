@@ -8,4 +8,10 @@ class Restaurant < ActiveRecord::Base
 	validates :name, :address, presence: true
 
 	acts_as_votable
+	geocoded_by :the_address
+	def the_address
+	"#{address} #{city} #{state} #{zipcode}"
+	end
+
+	after_validation :geocode, if: :address_changed?
 end

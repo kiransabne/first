@@ -20,13 +20,13 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'figaro', '0.7.0'
+gem "figaro"
 gem 'devise'
 gem "mini_magick"
 gem 'searchkick', '0.6.3'
 gem 'azure', '0.6.4'
 gem 'elasticsearch-extensions'
-
+gem 'geocoder'
 gem 'carrierwave-azure'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'omniauth-facebook'

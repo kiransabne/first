@@ -11,12 +11,13 @@
   <% @restaurants.each do |restaurant| %>
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <%= link_to image_tag(restaurant.image.url), restaurant %>
+          <%= link_to image_tag(restaurant.image.thumb.url), restaurant %>
           <div class="caption">
             <h3><%= link_to restaurant.name.capitalize, restaurant %></h3>
-            <p><%= restaurant.description.capitalize %></p>
-            <p><%= restaurant.city.capitalize %></p>
-          </div>
+            <p>Description: <%= restaurant.description.capitalize %></p>
+            <p>Location: <%= restaurant.city.capitalize %></p>
+        	  <div class="star-rating" data-score= <%= @avg_rating %> ></div>
+	 </div>
         </div>
       </div>
     <% end %>
