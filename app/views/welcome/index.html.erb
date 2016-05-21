@@ -89,3 +89,60 @@
   </div>
 </div>
 </div>
+
+<div class="container">
+ <h2> NearBy Places </h2>
+  <div class="center">
+  <div class="row">
+  <% @places.limit(5).each do |place| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(place.placesvisited.url), place %>
+          <div class="caption">
+            <h3><%= link_to place.name.capitalize, place %></h3>
+            <p><%= place.address.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
+
+<div class="container">
+ <h2> Nearby Street Foods Spots </h2>
+  <div class="center">
+  <div class="row">
+  <% @street_foods.limit(5).each do |street_food| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(street_food.streetfoods.url), street_food %>
+          <div class="caption">
+            <h3><%= link_to street_food.name.capitalize, street_food %></h3>
+            <p><%= street_food.address.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
+
+<div class="container">
+ <h2> NearBy Bars </h2>
+  <div class="center">
+  <div class="row">
+  <% @bars.limit(5).each do |bar| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(bar.bar.thumb.url), bar %>
+          <div class="caption">
+            <h3><%= link_to bar.name.capitalize, bar %></h3>
+            <p>Location: <%= bar.address.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>

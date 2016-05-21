@@ -1,0 +1,1 @@
+json.extract! @bar, :id, :name, :address, :zipcode, :phone, :timing, :takesreservation, :parking, :goodforgroups, :ambience, :noiselevel, :goodfordancing, :alcohol, :happyhour, :smoking, :hastv, :created_at, :updated_at

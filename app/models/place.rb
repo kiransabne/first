@@ -7,4 +7,7 @@ class Place < ActiveRecord::Base
 	has_many :reviews, as: :reviewable, dependent: :destroy
 	acts_as_votable
 
+	geocoded_by :address
+
+	after_validation :geocode, if: :address_changed?
 end

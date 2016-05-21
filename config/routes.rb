@@ -25,6 +25,17 @@ Rails.application.routes.draw do
   end
   end
   
+  resources :bars do
+    collection do
+      get 'search'
+    end
+    resources :reviews, except: [:show, :index]
+        member do
+                put "like", to: "bars#upvote"
+                put "dislike", to: "bars#downvote"
+        end
+  end
+
   post '/search/:query' => 'search#index'
 
   resources :places do

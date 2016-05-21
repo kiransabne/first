@@ -11,6 +11,9 @@ class SearchController < ApplicationController
 	 				@places = Place.search params[:q]
 				elsif params[:section] == "touristspot"
 					@touristspots = Touristspot.search params[:q]
+				elsif params[:section] == "bar"
+					@bars = Bar.search params[:q]
+
 	 		end
 	 	end
 	 end

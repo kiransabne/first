@@ -7,12 +7,17 @@ class WelcomeController < ApplicationController
 	visitor_latitude = request.location.latitude
 	visitor_longitude = request.location.longitude
 	@restaurants = Restaurant.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
-	@places = Place.all
+	@places = Place.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
 	@touristspots = Touristspot.all
-	@street_foods = StreetFood.all
+	@street_foods = StreetFood.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
+	@bars = Bar.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
+
   end
 
   def show
 	@restaurant = Restaurant.find(params[:id])
+	@place = Place.find(params[:id])
+	@street_food = StreetFood.find(params[:id])
+	@bar = Bar.find(params[:id])
   end
 end
