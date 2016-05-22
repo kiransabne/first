@@ -27,5 +27,5 @@ production:
   host: localhost
   pool: 5
   username: pguser
-  password: Diamond.1
+  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
 
