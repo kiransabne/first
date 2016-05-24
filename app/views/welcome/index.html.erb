@@ -77,7 +77,7 @@
   <% @restaurants.limit(5).each do |restaurant| %>
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <%= link_to image_tag(restaurant.image.url), restaurant %>
+          <%= link_to image_tag(restaurant.image.thumb.url), restaurant %>
           <div class="caption">
             <h3><%= link_to restaurant.name.capitalize, restaurant %></h3>
             <p><%= restaurant.description.capitalize %></p>
@@ -97,7 +97,7 @@
   <% @places.limit(5).each do |place| %>
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <%= link_to image_tag(place.placesvisited.url), place %>
+          <%= link_to image_tag(place.placesvisited.thumb.url), place %>
           <div class="caption">
             <h3><%= link_to place.name.capitalize, place %></h3>
             <p><%= place.address.capitalize %></p>
@@ -116,7 +116,7 @@
   <% @street_foods.limit(5).each do |street_food| %>
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <%= link_to image_tag(street_food.streetfoods.url), street_food %>
+          <%= link_to image_tag(street_food.streetfoods.thumb.url), street_food %>
           <div class="caption">
             <h3><%= link_to street_food.name.capitalize, street_food %></h3>
             <p><%= street_food.address.capitalize %></p>

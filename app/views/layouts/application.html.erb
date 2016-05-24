@@ -10,7 +10,15 @@
 </head>
 <body>
 	<%= render 'layouts/navbar' %>
-	<div class="container-fluid">
+	<ul class="nav nav-tabs">
+  	  <li><%= link_to "Home", root_path %></li>
+  	  <li><%= link_to "Restaurants", restaurants_path %></li>
+  	  <li><%= link_to "Bars", bars_path %></li>
+  	  <li><%= link_to "Street Foods", street_foods_path %></li>
+  	  <li><%= link_to "Places", places_path %>
+	</ul>
+
+		<div class="container-fluid">
 		<div class="bs-component">
 			<% flash.each do |name, msg| %>
 				<% if msg.is_a?(String) %>

@@ -31,7 +31,7 @@ gem 'carrierwave-azure'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'omniauth-facebook'
 gem 'social-share-button'
-
+gem 'unicorn'
 
 gem 'spring', group: :development
 
