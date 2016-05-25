@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hangouts:</strong>
+  <%= @weekend.Hangouts %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @weekend.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @weekend.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @weekend.description %>
+</p>
+
+<p>
+  <strong>Placesvisited:</strong>
+  <%= @weekend.placesvisited %>
+</p>
+
+<%= link_to 'Edit', edit_weekend_path(@weekend) %> |
+<%= link_to 'Back', weekends_path %>

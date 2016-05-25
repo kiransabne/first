@@ -14,7 +14,7 @@
  		<li><%= link_to "Places", search_path(section: "place", q: params[:q]) %></li>
 		<li><%= link_to "Touristspots", search_path(section: "touristspot", q: params[:q]) %></li>
 		<li><%= link_to "Bars", search_path(section: "bar", q: params[:q]) %></li>
-
+		<li><%= link_to "Pubs", search_path(section: "pub", q: params[:q]) %></li>
 
  	</ul>
  </div>
@@ -31,7 +31,8 @@
  		<%= render :partial => "search/touristspot", :collection => @results[:touristspots], :as => 'touristspot' %>
 		<p>Bars: results: <%= @results[:bars] %></p>
 		<%= render :partial => "search/bar", :collection => @results[:bars], :as => 'bar' %>
-
+		  <p>Pubs: results: <%= @results[:pubs] %></p>
+		<%= render :partial => "search/pub", :collection => @results[:pubs], :as => 'pub' %>
 
  	<% elsif params[:section] == "restaurant" %>
  		<p>results: <%= @restaurants %></p>
@@ -48,7 +49,9 @@
 	<% elsif params[:section] == "bar" %>
 		<p>results: <%= @bars %></p>
 		<%= render :partial => "search/bar", :collection => @bars, :as => 'bar' %>
-	
+	<% elsif params[:section] == "pub" %>
+		<p>results: <%= @pubs %></p>
+		<%= render :partial => "search/pub", :collection => @pubs, :as => 'pub' %>	
  	
  	<% end %>
  <% else %>

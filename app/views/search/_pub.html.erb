@@ -1,0 +1,13 @@
+  <div class="row">
+  <% @pubs.each do |pub| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(pub.pubhome.url), pub %>
+          <div class="caption">
+            <h3><%= link_to pub.name.capitalize, pub %></h3>
+           <p>Location:<%= pub.address %></p>
+            </div>
+        </div>
+      </div>
+    <% end %>
+  </div>

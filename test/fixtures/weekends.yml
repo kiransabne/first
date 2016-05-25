@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Hangouts: MyString
+  name: MyString
+  address: MyString
+  description: MyString
+  placesvisited: MyString
+
+two:
+  Hangouts: MyString
+  name: MyString
+  address: MyString
+  description: MyString
+  placesvisited: MyString

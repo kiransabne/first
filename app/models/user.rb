@@ -19,11 +19,11 @@ class User < ActiveRecord::Base
       where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
         user.provider = auth.provider
         user.uid = auth.uid
-        user.email = auth.info.email
+	user.email = auth.info.email
         user.password = Devise.friendly_token[0,20]
-		user.image = auth.info.image # assuming the user model has an image
-
-      end
+#		user.avatar = auth.info.avatar # assuming the user model has an image
+#        user.save!
+	end
   end
 end
 

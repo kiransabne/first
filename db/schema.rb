@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160522075134) do
+ActiveRecord::Schema.define(version: 20160525193439) do
 
   create_table "bars", force: :cascade do |t|
     t.string   "name"
@@ -45,6 +45,31 @@ ActiveRecord::Schema.define(version: 20160522075134) do
     t.string   "placesvisited"
     t.float    "latitude"
     t.float    "longitude"
+  end
+
+  create_table "pubs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "zipcode"
+    t.string   "phone"
+    t.string   "timing"
+    t.string   "takesreservation"
+    t.string   "parking"
+    t.string   "goodforgroups"
+    t.string   "ambience"
+    t.string   "noiselevel"
+    t.string   "goodfordancing"
+    t.string   "alcoho"
+    t.string   "happyhour"
+    t.string   "smoking"
+    t.string   "hastv"
+    t.string   "bar"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "pubprofile"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "pubhome"
   end
 
   create_table "restaurants", force: :cascade do |t|
@@ -136,5 +161,15 @@ ActiveRecord::Schema.define(version: 20160522075134) do
 
   add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
   add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
+
+  create_table "weekends", force: :cascade do |t|
+    t.string   "Hangouts"
+    t.string   "name"
+    t.string   "address"
+    t.string   "description"
+    t.string   "placesvisited"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end

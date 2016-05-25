@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
 	@touristspots = Touristspot.all
 	@street_foods = StreetFood.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
 	@bars = Bar.near([visitor_latitude, visitor_longitude], 50, :limit => 5)
-
+	@pubs = Pub.near([visitor_latitude, visitor_longitude], 10, :limit => 5)
   end
 
   def show
@@ -19,5 +19,6 @@ class WelcomeController < ApplicationController
 	@place = Place.find(params[:id])
 	@street_food = StreetFood.find(params[:id])
 	@bar = Bar.find(params[:id])
+	@pub = Pub.find(params[:id])
   end
 end

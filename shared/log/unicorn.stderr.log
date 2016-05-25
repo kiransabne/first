@@ -108,3 +108,492 @@ I, [2016-05-23T21:32:36.036794 #15079]  INFO -- : worker=0 ready
 I, [2016-05-23T21:32:36.038522 #15073]  INFO -- : master process ready
 I, [2016-05-23T21:32:36.040803 #15082]  INFO -- : worker=1 spawned pid=15082
 I, [2016-05-23T21:32:36.040936 #15082]  INFO -- : worker=1 ready
+I, [2016-05-24T04:36:53.335408 #15073]  INFO -- : reaped #<Process::Status: pid 15082 exit 0> worker=1
+I, [2016-05-24T04:36:53.435942 #15073]  INFO -- : reaped #<Process::Status: pid 15079 exit 0> worker=0
+I, [2016-05-24T04:36:53.436087 #15073]  INFO -- : master complete
+I, [2016-05-24T04:47:01.336555 #17641]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T04:47:04.821520 #17641]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T04:47:04.822429 #17641]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T04:47:04.822564 #17641]  INFO -- : worker=0 spawning...
+I, [2016-05-24T04:47:04.827747 #17641]  INFO -- : worker=1 spawning...
+I, [2016-05-24T04:47:04.828383 #17644]  INFO -- : worker=0 spawned pid=17644
+I, [2016-05-24T04:47:04.828554 #17644]  INFO -- : worker=0 ready
+I, [2016-05-24T04:47:04.831556 #17641]  INFO -- : master process ready
+I, [2016-05-24T04:47:04.832074 #17647]  INFO -- : worker=1 spawned pid=17647
+I, [2016-05-24T04:47:04.832217 #17647]  INFO -- : worker=1 ready
+I, [2016-05-24T04:51:50.020421 #17641]  INFO -- : reaped #<Process::Status: pid 17644 exit 0> worker=0
+I, [2016-05-24T04:51:50.020535 #17641]  INFO -- : reaped #<Process::Status: pid 17647 exit 0> worker=1
+I, [2016-05-24T04:51:50.020609 #17641]  INFO -- : master complete
+I, [2016-05-24T04:56:59.551322 #17795]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T04:57:02.989134 #17795]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T04:57:02.989353 #17795]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T04:57:02.989505 #17795]  INFO -- : worker=0 spawning...
+I, [2016-05-24T04:57:02.993036 #17795]  INFO -- : worker=1 spawning...
+I, [2016-05-24T04:57:02.993933 #17799]  INFO -- : worker=0 spawned pid=17799
+I, [2016-05-24T04:57:02.994140 #17799]  INFO -- : worker=0 ready
+I, [2016-05-24T04:57:02.996406 #17795]  INFO -- : master process ready
+I, [2016-05-24T04:57:02.997220 #17802]  INFO -- : worker=1 spawned pid=17802
+I, [2016-05-24T04:57:02.997411 #17802]  INFO -- : worker=1 ready
+I, [2016-05-24T04:57:59.424936 #17795]  INFO -- : reaped #<Process::Status: pid 17799 exit 0> worker=0
+I, [2016-05-24T04:57:59.425057 #17795]  INFO -- : reaped #<Process::Status: pid 17802 exit 0> worker=1
+I, [2016-05-24T04:57:59.425135 #17795]  INFO -- : master complete
+I, [2016-05-24T04:59:57.565181 #17958]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+SyntaxError: /home/deploy/first/config/initializers/devise.rb:266: syntax error, unexpected ':', expecting keyword_end
+		   callback_url: "http://socialye.in"			
+		                ^
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/notifications.rb:166:in `instrument'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /home/deploy/first/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `block in builder'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-05-24T05:00:26.149948 #18071]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+SyntaxError: /home/deploy/first/config/initializers/devise.rb:266: syntax error, unexpected ':', expecting keyword_end
+		   callback_url: "http://socialye.in"			
+		                ^
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/notifications.rb:166:in `instrument'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /home/deploy/first/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `block in builder'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-05-24T05:04:13.448879 #18227]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+SyntaxError: /home/deploy/first/config/initializers/devise.rb:266: syntax error, unexpected ':', expecting keyword_end
+		   callback_url: "http://socialye.in"			
+		                ^
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/notifications.rb:166:in `instrument'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /home/deploy/first/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `block in builder'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-05-24T05:08:33.605807 #18365]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+SyntaxError: /home/deploy/first/config/initializers/devise.rb:266: syntax error, unexpected ':', expecting keyword_end
+		   callback_url: "http://socialye.in"			
+		                ^
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/notifications.rb:166:in `instrument'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /home/deploy/first/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `block in builder'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-05-24T05:13:28.860801 #18526]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+SyntaxError: /home/deploy/first/config/initializers/devise.rb:266: syntax error, unexpected ':', expecting keyword_end
+		   callback_url: "http://socialye.in"			
+		                ^
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:268:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/notifications.rb:166:in `instrument'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /home/deploy/first/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `block in builder'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-05-24T05:15:13.265860 #18637]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T05:15:17.105798 #18637]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T05:15:17.106001 #18637]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T05:15:17.106126 #18637]  INFO -- : worker=0 spawning...
+I, [2016-05-24T05:15:17.110058 #18637]  INFO -- : worker=1 spawning...
+I, [2016-05-24T05:15:17.110641 #18640]  INFO -- : worker=0 spawned pid=18640
+I, [2016-05-24T05:15:17.110865 #18640]  INFO -- : worker=0 ready
+I, [2016-05-24T05:15:17.113452 #18637]  INFO -- : master process ready
+I, [2016-05-24T05:15:17.114018 #18643]  INFO -- : worker=1 spawned pid=18643
+I, [2016-05-24T05:15:17.114171 #18643]  INFO -- : worker=1 ready
+I, [2016-05-24T05:20:21.834341 #18637]  INFO -- : reaped #<Process::Status: pid 18643 exit 0> worker=1
+I, [2016-05-24T05:20:21.934762 #18637]  INFO -- : reaped #<Process::Status: pid 18640 exit 0> worker=0
+I, [2016-05-24T05:20:21.934907 #18637]  INFO -- : master complete
+I, [2016-05-24T05:37:58.852645 #19038]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T05:38:02.398021 #19038]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T05:38:02.398236 #19038]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T05:38:02.398357 #19038]  INFO -- : worker=0 spawning...
+I, [2016-05-24T05:38:02.402411 #19038]  INFO -- : worker=1 spawning...
+I, [2016-05-24T05:38:02.403052 #19042]  INFO -- : worker=0 spawned pid=19042
+I, [2016-05-24T05:38:02.403221 #19042]  INFO -- : worker=0 ready
+I, [2016-05-24T05:38:02.405822 #19038]  INFO -- : master process ready
+I, [2016-05-24T05:38:02.406451 #19045]  INFO -- : worker=1 spawned pid=19045
+I, [2016-05-24T05:38:02.406607 #19045]  INFO -- : worker=1 ready
+I, [2016-05-24T06:45:40.150360 #19038]  INFO -- : reaped #<Process::Status: pid 19042 exit 0> worker=0
+I, [2016-05-24T06:45:40.150485 #19038]  INFO -- : reaped #<Process::Status: pid 19045 exit 0> worker=1
+I, [2016-05-24T06:45:40.150564 #19038]  INFO -- : master complete
+I, [2016-05-24T06:53:52.709023 #20523]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T06:53:56.126560 #20523]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T06:53:56.126766 #20523]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T06:53:56.126885 #20523]  INFO -- : worker=0 spawning...
+I, [2016-05-24T06:53:56.130069 #20523]  INFO -- : worker=1 spawning...
+I, [2016-05-24T06:53:56.130845 #20526]  INFO -- : worker=0 spawned pid=20526
+I, [2016-05-24T06:53:56.131044 #20526]  INFO -- : worker=0 ready
+I, [2016-05-24T06:53:56.133560 #20523]  INFO -- : master process ready
+I, [2016-05-24T06:53:56.134260 #20529]  INFO -- : worker=1 spawned pid=20529
+I, [2016-05-24T06:53:56.134421 #20529]  INFO -- : worker=1 ready
+I, [2016-05-24T09:21:09.263670 #20523]  INFO -- : reaped #<Process::Status: pid 20526 exit 0> worker=0
+I, [2016-05-24T09:21:09.263791 #20523]  INFO -- : reaped #<Process::Status: pid 20529 exit 0> worker=1
+I, [2016-05-24T09:21:09.263864 #20523]  INFO -- : master complete
+I, [2016-05-24T09:24:58.688556 #22654]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T09:25:02.098598 #22654]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T09:25:02.098811 #22654]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T09:25:02.098935 #22654]  INFO -- : worker=0 spawning...
+I, [2016-05-24T09:25:02.102455 #22654]  INFO -- : worker=1 spawning...
+I, [2016-05-24T09:25:02.103062 #22657]  INFO -- : worker=0 spawned pid=22657
+I, [2016-05-24T09:25:02.103230 #22657]  INFO -- : worker=0 ready
+I, [2016-05-24T09:25:02.105571 #22654]  INFO -- : master process ready
+I, [2016-05-24T09:25:02.106125 #22660]  INFO -- : worker=1 spawned pid=22660
+I, [2016-05-24T09:25:02.106278 #22660]  INFO -- : worker=1 ready
+I, [2016-05-24T09:27:19.203537 #22654]  INFO -- : reaped #<Process::Status: pid 22657 exit 0> worker=0
+I, [2016-05-24T09:27:19.304036 #22654]  INFO -- : reaped #<Process::Status: pid 22660 exit 0> worker=1
+I, [2016-05-24T09:27:19.304187 #22654]  INFO -- : master complete
+I, [2016-05-24T09:27:55.078421 #22814]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T09:27:58.465148 #22814]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T09:27:58.465359 #22814]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T09:27:58.465481 #22814]  INFO -- : worker=0 spawning...
+I, [2016-05-24T09:27:58.468846 #22814]  INFO -- : worker=1 spawning...
+I, [2016-05-24T09:27:58.469606 #22817]  INFO -- : worker=0 spawned pid=22817
+I, [2016-05-24T09:27:58.469774 #22817]  INFO -- : worker=0 ready
+I, [2016-05-24T09:27:58.472614 #22814]  INFO -- : master process ready
+I, [2016-05-24T09:27:58.473322 #22820]  INFO -- : worker=1 spawned pid=22820
+I, [2016-05-24T09:27:58.473484 #22820]  INFO -- : worker=1 ready
+I, [2016-05-24T09:29:53.846312 #22814]  INFO -- : reaped #<Process::Status: pid 22817 exit 0> worker=0
+I, [2016-05-24T09:29:53.846427 #22814]  INFO -- : reaped #<Process::Status: pid 22820 exit 0> worker=1
+I, [2016-05-24T09:29:53.846507 #22814]  INFO -- : master complete
+I, [2016-05-24T09:31:40.703072 #22986]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T09:31:44.257643 #22986]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T09:31:44.257849 #22986]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T09:31:44.257979 #22986]  INFO -- : worker=0 spawning...
+I, [2016-05-24T09:31:44.261994 #22986]  INFO -- : worker=1 spawning...
+I, [2016-05-24T09:31:44.262528 #22991]  INFO -- : worker=0 spawned pid=22991
+I, [2016-05-24T09:31:44.262667 #22991]  INFO -- : worker=0 ready
+I, [2016-05-24T09:31:44.264498 #22986]  INFO -- : master process ready
+I, [2016-05-24T09:31:44.265027 #22994]  INFO -- : worker=1 spawned pid=22994
+I, [2016-05-24T09:31:44.265156 #22994]  INFO -- : worker=1 ready
+I, [2016-05-24T09:37:32.338713 #22986]  INFO -- : reaped #<Process::Status: pid 22994 exit 0> worker=1
+I, [2016-05-24T09:37:32.439211 #22986]  INFO -- : reaped #<Process::Status: pid 22991 exit 0> worker=0
+I, [2016-05-24T09:37:32.439357 #22986]  INFO -- : master complete
+I, [2016-05-24T09:38:19.409432 #23192]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T09:38:22.877091 #23192]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T09:38:22.877782 #23192]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T09:38:22.877915 #23192]  INFO -- : worker=0 spawning...
+I, [2016-05-24T09:38:22.881921 #23192]  INFO -- : worker=1 spawning...
+I, [2016-05-24T09:38:22.882613 #23195]  INFO -- : worker=0 spawned pid=23195
+I, [2016-05-24T09:38:22.882767 #23195]  INFO -- : worker=0 ready
+I, [2016-05-24T09:38:22.884680 #23192]  INFO -- : master process ready
+I, [2016-05-24T09:38:22.885274 #23198]  INFO -- : worker=1 spawned pid=23198
+I, [2016-05-24T09:38:22.885421 #23198]  INFO -- : worker=1 ready
+I, [2016-05-24T09:41:38.639259 #23192]  INFO -- : reaped #<Process::Status: pid 23195 exit 0> worker=0
+I, [2016-05-24T09:41:38.639372 #23192]  INFO -- : reaped #<Process::Status: pid 23198 exit 0> worker=1
+I, [2016-05-24T09:41:38.639448 #23192]  INFO -- : master complete
+I, [2016-05-24T09:42:30.536414 #1356]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T09:42:39.377086 #1356]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T09:42:39.377292 #1356]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T09:42:39.377469 #1356]  INFO -- : worker=0 spawning...
+I, [2016-05-24T09:42:39.380482 #1356]  INFO -- : worker=1 spawning...
+I, [2016-05-24T09:42:39.381012 #1438]  INFO -- : worker=0 spawned pid=1438
+I, [2016-05-24T09:42:39.381144 #1438]  INFO -- : worker=0 ready
+I, [2016-05-24T09:42:39.383114 #1356]  INFO -- : master process ready
+I, [2016-05-24T09:42:39.383593 #1441]  INFO -- : worker=1 spawned pid=1441
+I, [2016-05-24T09:42:39.383718 #1441]  INFO -- : worker=1 ready
+I, [2016-05-24T09:51:42.679743 #1356]  INFO -- : reaped #<Process::Status: pid 1438 exit 0> worker=0
+I, [2016-05-24T09:51:42.780272 #1356]  INFO -- : reaped #<Process::Status: pid 1441 exit 0> worker=1
+I, [2016-05-24T09:51:42.780425 #1356]  INFO -- : master complete
+I, [2016-05-24T09:57:20.089971 #2007]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T09:57:23.483451 #2007]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T09:57:23.483654 #2007]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T09:57:23.483773 #2007]  INFO -- : worker=0 spawning...
+I, [2016-05-24T09:57:23.487139 #2007]  INFO -- : worker=1 spawning...
+I, [2016-05-24T09:57:23.487838 #2010]  INFO -- : worker=0 spawned pid=2010
+I, [2016-05-24T09:57:23.487995 #2010]  INFO -- : worker=0 ready
+I, [2016-05-24T09:57:23.489562 #2007]  INFO -- : master process ready
+I, [2016-05-24T09:57:23.490141 #2013]  INFO -- : worker=1 spawned pid=2013
+I, [2016-05-24T09:57:23.490341 #2013]  INFO -- : worker=1 ready
+I, [2016-05-24T10:00:36.861261 #2007]  INFO -- : reaped #<Process::Status: pid 2010 exit 0> worker=0
+I, [2016-05-24T10:00:36.861383 #2007]  INFO -- : reaped #<Process::Status: pid 2013 exit 0> worker=1
+I, [2016-05-24T10:00:36.861457 #2007]  INFO -- : master complete
+I, [2016-05-24T10:04:17.160225 #2220]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T10:04:20.534280 #2220]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T10:04:20.534482 #2220]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T10:04:20.534600 #2220]  INFO -- : worker=0 spawning...
+I, [2016-05-24T10:04:20.537693 #2220]  INFO -- : worker=1 spawning...
+I, [2016-05-24T10:04:20.538376 #2223]  INFO -- : worker=0 spawned pid=2223
+I, [2016-05-24T10:04:20.538521 #2223]  INFO -- : worker=0 ready
+I, [2016-05-24T10:04:20.541153 #2220]  INFO -- : master process ready
+I, [2016-05-24T10:04:20.541814 #2226]  INFO -- : worker=1 spawned pid=2226
+I, [2016-05-24T10:04:20.541951 #2226]  INFO -- : worker=1 ready
+I, [2016-05-24T10:33:41.414511 #2220]  INFO -- : reaped #<Process::Status: pid 2223 exit 0> worker=0
+I, [2016-05-24T10:33:41.414663 #2220]  INFO -- : reaped #<Process::Status: pid 2226 exit 0> worker=1
+I, [2016-05-24T10:33:41.414763 #2220]  INFO -- : master complete
+I, [2016-05-24T10:48:05.969231 #2937]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-24T10:48:09.388411 #2937]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-24T10:48:09.388614 #2937]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-24T10:48:09.388763 #2937]  INFO -- : worker=0 spawning...
+I, [2016-05-24T10:48:09.391983 #2937]  INFO -- : worker=1 spawning...
+I, [2016-05-24T10:48:09.392786 #2940]  INFO -- : worker=0 spawned pid=2940
+I, [2016-05-24T10:48:09.392970 #2940]  INFO -- : worker=0 ready
+I, [2016-05-24T10:48:09.395299 #2937]  INFO -- : master process ready
+I, [2016-05-24T10:48:09.396005 #2943]  INFO -- : worker=1 spawned pid=2943
+I, [2016-05-24T10:48:09.396172 #2943]  INFO -- : worker=1 ready
+I, [2016-05-25T10:36:16.687790 #2937]  INFO -- : reaped #<Process::Status: pid 2940 exit 0> worker=0
+I, [2016-05-25T10:36:16.687926 #2937]  INFO -- : reaped #<Process::Status: pid 2943 exit 0> worker=1
+I, [2016-05-25T10:36:16.688006 #2937]  INFO -- : master complete
+I, [2016-05-25T11:00:14.592904 #19303]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-25T11:00:18.040010 #19303]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-25T11:00:18.040211 #19303]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-25T11:00:18.040331 #19303]  INFO -- : worker=0 spawning...
+I, [2016-05-25T11:00:18.044344 #19303]  INFO -- : worker=1 spawning...
+I, [2016-05-25T11:00:18.044925 #19306]  INFO -- : worker=0 spawned pid=19306
+I, [2016-05-25T11:00:18.045077 #19306]  INFO -- : worker=0 ready
+I, [2016-05-25T11:00:18.046764 #19303]  INFO -- : master process ready
+I, [2016-05-25T11:00:18.047263 #19309]  INFO -- : worker=1 spawned pid=19309
+I, [2016-05-25T11:00:18.047399 #19309]  INFO -- : worker=1 ready
+I, [2016-05-25T14:05:37.386734 #19303]  INFO -- : reaped #<Process::Status: pid 19306 exit 0> worker=0
+I, [2016-05-25T14:05:37.487201 #19303]  INFO -- : reaped #<Process::Status: pid 19309 exit 0> worker=1
+I, [2016-05-25T14:05:37.487340 #19303]  INFO -- : master complete
+I, [2016-05-25T18:51:06.691011 #22383]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+SyntaxError: /home/deploy/first/app/controllers/search_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:244:in `rescue in load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:237:in `load_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:274:in `require'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:360:in `require_or_load'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:317:in `depend_on'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.5.1/lib/active_support/dependencies.rb:233:in `require_dependency'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:472:in `block (2 levels) in eager_load!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:471:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:471:in `block in eager_load!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:469:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:469:in `eager_load!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/engine.rb:346:in `eager_load!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application/finisher.rb:56:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application/finisher.rb:56:in `block in <module:Finisher>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:30:in `run'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.5.1/lib/rails/application.rb:352:in `initialize!'
+  /home/deploy/first/config/environment.rb:5:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `eval'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn.rb:56:in `block in builder'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
