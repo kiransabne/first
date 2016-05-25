@@ -47,11 +47,11 @@
 								</a>
 							</li>
 							<li>
-								<a href="http://socialye.in/bars" class="lp-border-radius-5">	
+								<a href="http://socialye.in/pubs" class="lp-border-radius-5">	
 									<span>
 										<!-- Shopping Bag icon by Icons8 -->
 										<img class="icon icons8-Shopping-Bag" src="http://reviewapp.blob.core.windows.net/icons/beer.png" alt="Shop"><br>
-										Bars
+										Pubs
 									</span>
 								</a>
 							</li>
@@ -129,16 +129,16 @@
 </div>
 
 <div class="container">
- <h2> NearBy Bars </h2>
+ <h2> NearBy Pubs </h2>
   <div class="center">
   <div class="row">
-  <% @bars.limit(5).each do |bar| %>
+  <% @pubs.limit(5).each do |pub| %>
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <%= link_to image_tag(bar.bar.thumb.url), bar %>
+          <%= link_to image_tag(pub.pubhome.thumb.url), pub %>
           <div class="caption">
-            <h3><%= link_to bar.name.capitalize, bar %></h3>
-            <p>Location: <%= bar.address.capitalize %></p>
+            <h3><%= link_to pub.name.capitalize, pub %></h3>
+            <p>Location: <%= pub.address.capitalize %></p>
           </div>
         </div>
       </div>
