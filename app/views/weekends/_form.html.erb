@@ -1,4 +1,4 @@
-<%= form_for(@weekend) do |f| %>
+<%= form_for(@weekend, :html => { multipart: true }) do |f| %>
   <% if @weekend.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@weekend.errors.count, "error") %> prohibited this weekend from being saved:</h2>
@@ -11,27 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Hangouts %><br>
-    <%= f.text_field :Hangouts %>
-  </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :address %><br>
-    <%= f.text_field :address %>
+    <%= f.text_field :address, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_field :description, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :placesvisited %><br>
-    <%= f.text_field :placesvisited %>
-  </div>
+  <div class="form-group">
+    <%= f.label :image %><br>
+	<%= f.file_field :weekendhangout, class: "form-control" %>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>

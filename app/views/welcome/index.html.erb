@@ -56,11 +56,11 @@
 								</a>
 							</li>
 							<li>
-								<a href="http://socialye.in/places" class="lp-border-radius-5">	
+								<a href="http://socialye.in/weekends" class="lp-border-radius-5">	
 									<span>
 									<!-- Cat Footprint icon by Icons8 -->
 <img class="icon icons8-Cat-Footprint" src="http://reviewapp.blob.core.windows.net/icons/sitting-place.png" alt=""><br>
-										Places/Spots
+										Weekend Hangouts
 									</span>
 								</a>
 							</li>
@@ -91,16 +91,16 @@
 </div>
 
 <div class="container">
- <h2> NearBy Places </h2>
+ <h2> NearBy Weekend Hangouts </h2>
   <div class="center">
   <div class="row">
-  <% @places.limit(5).each do |place| %>
+  <% @weekends.limit(5).each do |weekend| %>
       <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
-          <%= link_to image_tag(place.placesvisited.thumb.url), place %>
+          <%= link_to image_tag(weekend.weekendhangout.thumb.url), weekend %>
           <div class="caption">
-            <h3><%= link_to place.name.capitalize, place %></h3>
-            <p><%= place.address.capitalize %></p>
+            <h3><%= link_to weekend.name.capitalize, weekend %></h3>
+            <p><%= weekend.address.capitalize %></p>
           </div>
         </div>
       </div>

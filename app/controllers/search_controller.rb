@@ -15,7 +15,8 @@ class SearchController < ApplicationController
 					@bars = Bar.search params[:q]
 				elsif params[:section] == "pub"
 					@pubs = Pub.search params[:q]
-
+				elsif params[:section] == "weekend"
+					@weekends = Weekend.search params[:q]
 	 		end
 	 	end
 	 end

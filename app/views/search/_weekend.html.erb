@@ -1,0 +1,13 @@
+<div class="row">
+  <% @weekends.each do |weekend| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to image_tag(weekend.weekendhangout.url), weekend %>
+          <div class="caption">
+            <h3><%= link_to weekend.name.capitalize, weekend %></h3>
+            <p><%= weekend.address.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>

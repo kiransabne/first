@@ -15118,3 +15118,569 @@ ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
 
 
 bundler: failed to load command: unicorn (/home/deploy/.rbenv/versions/2.3.0/bin/unicorn)
+Started GET "/" for 43.255.220.96 at 2016-05-25 21:58:59 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mRestaurant Load (3.9ms)[0m  [1mSELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPlace Load (1.8ms)[0m  SELECT  places.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((places.longitude - 72.9667) / 57.2957795), ((places.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "places" WHERE (places.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND places.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5
+  [1m[36mStreetFood Load (1.5ms)[0m  [1mSELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPub Load (1.7ms)[0m  SELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  Rendered welcome/index.html.erb within layouts/welcome_page (56.9ms)
+  Rendered layouts/_bootstrap.html.erb (0.6ms)
+  Rendered layouts/_navbarw.html.erb (8.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 286ms (Views: 64.4ms | ActiveRecord: 17.8ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 21:59:01 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/users/sign_up" for 43.255.220.96 at 2016-05-25 21:59:03 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (45.4ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 59.5ms | ActiveRecord: 2.8ms)
+Started GET "/users/sign_up" for 43.255.220.96 at 2016-05-25 21:59:04 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (47.4ms)
+  Rendered layouts/_bootstrap.html.erb (0.4ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 116ms (Views: 66.2ms | ActiveRecord: 5.8ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 21:59:05 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/users/auth/facebook" for 43.255.220.96 at 2016-05-25 21:59:12 +0000
+I, [2016-05-25T21:59:12.382524 #24090]  INFO -- omniauth: (facebook) Request phase initiated.
+Started GET "/users/auth/facebook" for 43.255.220.96 at 2016-05-25 21:59:13 +0000
+I, [2016-05-25T21:59:13.134882 #24093]  INFO -- omniauth: (facebook) Request phase initiated.
+Started GET "/users/auth/facebook/callback?code=AQAx3ElnC61MRRis6xrMOuMiaHLD4DWG48_AZNpZgvHTadmScHrX1r3-txm_Nu2eLV2jG6u43HU54MWx1JvcCDr4za-Xt9wkrKkfQqtvFWc3koLhzqn6Y1YEN7wNuFfxUWHCvwbXSTGDw8ZLzxZelFkMjRAdJpT8C1XEQ5W1qAjh8elUeWroYPfa-VbuKpb8vhWqNT3WNYzBtvtIyERmMRQAndFu5jYLbzL_bhq6mJ6rOLUTysdzLApcowq-uxp_Nif7yb_9MktL7UX92H7luKHdoVPWW52TFFt8Pw77_7T2EoMKBQZ3BIhiiAQ6eaAojjy8zoGdYpmw1hBwZFM6gI4C&state=b719496a83f18499a406bd9ecff0ae1fa90dc8f90e484530" for 43.255.220.96 at 2016-05-25 21:59:25 +0000
+I, [2016-05-25T21:59:25.925800 #24093]  INFO -- omniauth: (facebook) Callback phase initiated.
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAx3ElnC61MRRis6xrMOuMiaHLD4DWG48_AZNpZgvHTadmScHrX1r3-txm_Nu2eLV2jG6u43HU54MWx1JvcCDr4za-Xt9wkrKkfQqtvFWc3koLhzqn6Y1YEN7wNuFfxUWHCvwbXSTGDw8ZLzxZelFkMjRAdJpT8C1XEQ5W1qAjh8elUeWroYPfa-VbuKpb8vhWqNT3WNYzBtvtIyERmMRQAndFu5jYLbzL_bhq6mJ6rOLUTysdzLApcowq-uxp_Nif7yb_9MktL7UX92H7luKHdoVPWW52TFFt8Pw77_7T2EoMKBQZ3BIhiiAQ6eaAojjy8zoGdYpmw1hBwZFM6gI4C", "state"=>"b719496a83f18499a406bd9ecff0ae1fa90dc8f90e484530"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "facebook"], ["uid", "1062541127139829"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "current_sign_in_ip" = $3, "sign_in_count" = $4, "updated_at" = $5 WHERE "users"."id" = $6[0m  [["last_sign_in_at", "2016-05-24 10:48:52.839679"], ["current_sign_in_at", "2016-05-25 21:59:26.667454"], ["current_sign_in_ip", "43.255.220.96"], ["sign_in_count", 4], ["updated_at", "2016-05-25 21:59:26.670055"], ["id", 6]]
+  [1m[35m (13.1ms)[0m  COMMIT
+Redirected to http://socialye.in/
+Completed 302 Found in 30ms (ActiveRecord: 15.5ms)
+Started GET "/" for 43.255.220.96 at 2016-05-25 21:59:26 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mRestaurant Load (3.6ms)[0m  [1mSELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPlace Load (1.5ms)[0m  SELECT  places.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((places.longitude - 72.9667) / 57.2957795), ((places.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "places" WHERE (places.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND places.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5
+  [1m[36mStreetFood Load (1.4ms)[0m  [1mSELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPub Load (1.6ms)[0m  SELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  Rendered welcome/index.html.erb within layouts/welcome_page (44.3ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_navbarw.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 241ms (Views: 46.4ms | ActiveRecord: 14.9ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 21:59:28 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/pubs" for 43.255.220.96 at 2016-05-25 21:59:35 +0000
+Processing by PubsController#index as HTML
+  [1m[36mPub Load (1.6ms)[0m  [1mSELECT "pubs".* FROM "pubs"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered pubs/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_bootstrap.html.erb (0.5ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 3.1ms)
+Started GET "/pubs" for 43.255.220.96 at 2016-05-25 21:59:35 +0000
+Processing by PubsController#index as HTML
+  [1m[35mPub Load (0.8ms)[0m  SELECT "pubs".* FROM "pubs"
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered pubs/index.html.erb within layouts/application (31.1ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 2.5ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 21:59:36 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/" for 43.255.220.96 at 2016-05-25 21:59:48 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mRestaurant Load (3.9ms)[0m  SELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5
+  [1m[36mPlace Load (3.4ms)[0m  [1mSELECT  places.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((places.longitude - 72.9667) / 57.2957795), ((places.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "places" WHERE (places.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND places.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mStreetFood Load (3.5ms)[0m  SELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5
+  [1m[36mPub Load (3.3ms)[0m  [1mSELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5[0m
+  Rendered welcome/index.html.erb within layouts/welcome_page (21.0ms)
+  Rendered layouts/_bootstrap.html.erb (0.5ms)
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered layouts/_navbarw.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 201ms (Views: 16.0ms | ActiveRecord: 15.4ms)
+Started GET "/" for 43.255.220.96 at 2016-05-25 21:59:48 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mRestaurant Load (1.9ms)[0m  [1mSELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPlace Load (1.7ms)[0m  SELECT  places.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((places.longitude - 72.9667) / 57.2957795), ((places.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "places" WHERE (places.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND places.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5
+  [1m[36mStreetFood Load (1.6ms)[0m  [1mSELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPub Load (2.0ms)[0m  SELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  Rendered welcome/index.html.erb within layouts/welcome_page (12.6ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_navbarw.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 190ms (Views: 10.8ms | ActiveRecord: 7.9ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 21:59:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/" for 43.255.220.96 at 2016-05-25 22:00:19 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mRestaurant Load (2.6ms)[0m  [1mSELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPlace Load (5.7ms)[0m  SELECT  places.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((places.longitude - 72.9667) / 57.2957795), ((places.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "places" WHERE (places.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND places.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - places.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(places.latitude * PI() / 180) * POWER(SIN((72.9667 - places.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5
+  [1m[36mStreetFood Load (3.1ms)[0m  [1mSELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPub Load (1.9ms)[0m  SELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  Rendered welcome/index.html.erb within layouts/welcome_page (19.8ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_navbarw.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 214ms (Views: 11.6ms | ActiveRecord: 14.0ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 22:00:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/users/edit" for 43.255.220.96 at 2016-05-25 22:00:23 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 1.0ms)
+Started GET "/users/edit" for 43.255.220.96 at 2016-05-25 22:00:23 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.6ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.96 at 2016-05-25 22:00:24 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/street_foods" for 43.255.220.96 at 2016-05-25 22:00:28 +0000
+Processing by StreetFoodsController#index as HTML
+  [1m[36mStreetFood Load (0.7ms)[0m  [1mSELECT "street_foods".* FROM "street_foods"[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered street_foods/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 1.5ms)
+Started GET "/bars" for 43.255.220.96 at 2016-05-25 22:00:31 +0000
+Processing by BarsController#index as HTML
+  [1m[36mBar Load (1.0ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered bars/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 3.0ms)
+Started GET "/restaurants" for 43.255.220.96 at 2016-05-25 22:00:32 +0000
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.8ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered restaurants/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 1.4ms)
+Started GET "/" for 43.255.220.149 at 2016-05-26 04:31:09 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mRestaurant Load (3.8ms)[0m  [1mSELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mWeekend Load (1.5ms)[0m  SELECT  weekends.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - weekends.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(weekends.latitude * PI() / 180) * POWER(SIN((72.9667 - weekends.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((weekends.longitude - 72.9667) / 57.2957795), ((weekends.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "weekends" WHERE (weekends.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND weekends.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - weekends.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(weekends.latitude * PI() / 180) * POWER(SIN((72.9667 - weekends.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  [1m[36mStreetFood Load (1.4ms)[0m  [1mSELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPub Load (1.7ms)[0m  SELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  Rendered welcome/index.html.erb within layouts/welcome_page (51.9ms)
+  Rendered layouts/_bootstrap.html.erb (1.7ms)
+  Rendered layouts/_navbarw.html.erb (7.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 533ms (Views: 59.2ms | ActiveRecord: 17.7ms)
+Started GET "/" for 43.255.220.149 at 2016-05-26 04:31:10 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mRestaurant Load (1.9ms)[0m  [1mSELECT  restaurants.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((restaurants.longitude - 72.9667) / 57.2957795), ((restaurants.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "restaurants" WHERE (restaurants.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND restaurants.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - restaurants.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(restaurants.latitude * PI() / 180) * POWER(SIN((72.9667 - restaurants.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mWeekend Load (1.6ms)[0m  SELECT  weekends.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - weekends.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(weekends.latitude * PI() / 180) * POWER(SIN((72.9667 - weekends.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((weekends.longitude - 72.9667) / 57.2957795), ((weekends.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "weekends" WHERE (weekends.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND weekends.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - weekends.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(weekends.latitude * PI() / 180) * POWER(SIN((72.9667 - weekends.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  [1m[36mStreetFood Load (1.7ms)[0m  [1mSELECT  street_foods.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((street_foods.longitude - 72.9667) / 57.2957795), ((street_foods.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "street_foods" WHERE (street_foods.latitude BETWEEN 18.750339197040635 AND 19.649660802959364 AND street_foods.longitude BETWEEN 72.49055424166608 AND 73.44284575833393 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - street_foods.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(street_foods.latitude * PI() / 180) * POWER(SIN((72.9667 - street_foods.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 50)  ORDER BY distance ASC LIMIT 5[0m
+  [1m[35mPub Load (1.6ms)[0m  SELECT  pubs.*, 6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2))) AS distance, MOD(CAST((ATAN2( ((pubs.longitude - 72.9667) / 57.2957795), ((pubs.latitude - 19.2) / 57.2957795)) * 57.2957795) + 360 AS decimal), 360) AS bearing FROM "pubs" WHERE (pubs.latitude BETWEEN 19.110067839408128 AND 19.28993216059187 AND pubs.longitude BETWEEN 72.87147084833322 AND 73.06192915166679 AND (6371.0 * 2 * ASIN(SQRT(POWER(SIN((19.2 - pubs.latitude) * PI() / 180 / 2), 2) + COS(19.2 * PI() / 180) * COS(pubs.latitude * PI() / 180) * POWER(SIN((72.9667 - pubs.longitude) * PI() / 180 / 2), 2)))) BETWEEN 0.0 AND 10)  ORDER BY distance ASC LIMIT 5
+  Rendered welcome/index.html.erb within layouts/welcome_page (13.2ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbarw.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 188ms (Views: 10.5ms | ActiveRecord: 6.8ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.149 at 2016-05-26 04:31:11 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+
+Started GET "/weekends" for 43.255.220.149 at 2016-05-26 04:31:24 +0000
+Processing by WeekendsController#index as HTML
+  [1m[36mWeekend Load (6.4ms)[0m  [1mSELECT "weekends".* FROM "weekends"[0m
+  Rendered weekends/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_bootstrap.html.erb (0.4ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 32.3ms | ActiveRecord: 6.4ms)
+Started GET "/weekends" for 43.255.220.149 at 2016-05-26 04:31:24 +0000
+Processing by WeekendsController#index as HTML
+  [1m[35mWeekend Load (0.7ms)[0m  SELECT "weekends".* FROM "weekends"
+  Rendered weekends/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_bootstrap.html.erb (0.1ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.7ms)
+Started GET "/img/start/bg.jpg" for 43.255.220.149 at 2016-05-26 04:31:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/img/start/bg.jpg"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn:126:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:63:in `kernel_load'
+  bundler (1.12.4) lib/bundler/cli/exec.rb:24:in `run'
+  bundler (1.12.4) lib/bundler/cli.rb:304:in `exec'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.12.4) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.12.4) lib/bundler/cli.rb:11:in `start'
+  bundler (1.12.4) exe/bundle:27:in `block in <top (required)>'
+  bundler (1.12.4) lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  bundler (1.12.4) exe/bundle:19:in `<top (required)>'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+  /home/deploy/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+
+

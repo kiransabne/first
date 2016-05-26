@@ -1,29 +1,128 @@
-<p id="notice"><%= notice %></p>
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  
+  tr {
+    border-bottom: 1px solid #e3e3e3;
+  }
+</style>
 
-<p>
-  <strong>Hangouts:</strong>
-  <%= @weekend.Hangouts %>
-</p>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-8">
+      <%= image_tag @weekend.weekendhangout_url %>   
+      <br>
+      <br>
+       <% if @reviews.blank? %>
+      <h3> No reviews Yet for this Place. If you have been there then, Be the first to give a reviews and help others</h3>
+    <% else %>
+      <h2> Reviews.</h2>
+      <table class="table">
+        <thead>
+          <tr>
 
-<p>
-  <strong>Name:</strong>
-  <%= @weekend.name %>
-</p>
+            <th class="col-md-3"></th>
+            <th class="col-md-9"></th>
+          </tr>
+        </thead>
 
-<p>
-  <strong>Address:</strong>
-  <%= @weekend.address %>
-</p>
+        <tbody class="frm-white">
+          <% @reviews.each do |review| %>
+              <tr>
+                <td>
+                    <div class="img-rounded">
+                      <img src="<%= review.user.avatar_url %>">
+                    </div> 
 
-<p>
-  <strong>Description:</strong>
-  <%= @weekend.description %>
-</p>
+                  
+                    <p><%= review.created_at.strftime("%-d/%-m/%-y") %></p>
+                </td>
 
-<p>
-  <strong>Placesvisited:</strong>
-  <%= @weekend.placesvisited %>
-</p>
+                <td>
+                    <h4><strong>
+                        <%= "#{review.user.first_name.capitalize} #{review.user.last_name.capitalize[0]}." %>
+                    </strong>
+                    </h4>
+                      <div class="star-rating" data-score= <%= review.rating %> ></div>
+                      <h5><p><%= h(review.comment).gsub(/\n/, '<br/>').html_safe %></p></h5>
+								<%= social_share_button_tag(@weekend.reviews) %>
 
-<%= link_to 'Edit', edit_weekend_path(@weekend) %> |
-<%= link_to 'Back', weekends_path %>
+                      <% if user_signed_in? %>
+                        <% if (review.user == current_user) || (current_user.admin?) %>
+                          <%= link_to "Edit", edit_weekend_review_path(@weekend, review) %>
+                          <%= link_to "Delete", weekend_review_path(@weekend, review), method: :delete %>
+                          <% end %>
+                        <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+    <% end %>
+    </div>
+    <br>
+    <br>
+	<div class="col-md-4">
+
+		<div class="frm-white"> 
+		<div class="detail-overview-hearts">
+                <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @weekend.get_upvotes.size %></strong> people love it
+            </h4></div>
+		  <%= link_to "Give Heart", like_weekend_path(@weekend), class: "btn btn-success", method: :put %>
+
+			  <%= link_to "Downvote", dislike_weekend_path(@weekend), 
+				class: "btn btn-link", method: :put %>
+		</div>
+      
+      <h2><strong>
+          <%= @weekend.name.capitalize %>
+      </strong></h2><%= social_share_button_tag(@weekend.name) %>
+
+		    
+    <div class="star-rating" data-score= <%= @avg_rating %> ></div>
+    <p><%= "#{@reviews.length} reviews" %></p>
+
+	<div class="frm-white">
+    <p>
+      <strong>Address:</strong>
+      <%= @weekend.address.capitalize %>
+    </p>
+	
+	<p><strong>Description:</strong>
+		<%= @weekend.description %>
+	</p>
+	</div>
+
+    <%= link_to "Write a Review", new_weekend_review_path(@weekend), class: "btn btn-success" %>
+
+    <br>
+    <br>
+
+    <iframe
+    width="296"
+    height="230"
+    frameborder="1" style="border:1"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ7BphNq_tVYF9JucYg93sM_xkeuMwR0w
+      &q=<%= @weekend.address.parameterize %>&zoom=14" allowfullscreen>
+  </iframe>
+
+  <br>
+  <br>
+</div>
+</div>
+</div>
+<%= link_to 'Edit Details', edit_weekend_path(@weekend), class: "btn btn-link" %> |
+<%= link_to 'Back', weekends_path, class: "btn btn-link" %>
+
+
+<script>
+  $('.star-rating').raty({
+    path: 'http://reviewapp.blob.core.windows.net/stars', 
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score')
+    }
+  });
+</script>

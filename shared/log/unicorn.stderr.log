@@ -597,3 +597,28 @@ SyntaxError: /home/deploy/first/app/controllers/search_controller.rb:23: syntax 
   /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
   /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
   /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-05-25T21:58:47.020696 #24087]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-25T21:58:50.540905 #24087]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-25T21:58:50.541107 #24087]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-25T21:58:50.541228 #24087]  INFO -- : worker=0 spawning...
+I, [2016-05-25T21:58:50.544479 #24087]  INFO -- : worker=1 spawning...
+I, [2016-05-25T21:58:50.545097 #24090]  INFO -- : worker=0 spawned pid=24090
+I, [2016-05-25T21:58:50.545414 #24090]  INFO -- : worker=0 ready
+I, [2016-05-25T21:58:50.546986 #24087]  INFO -- : master process ready
+I, [2016-05-25T21:58:50.547900 #24093]  INFO -- : worker=1 spawned pid=24093
+I, [2016-05-25T21:58:50.548034 #24093]  INFO -- : worker=1 ready
+I, [2016-05-26T02:54:20.289138 #24087]  INFO -- : reaped #<Process::Status: pid 24090 exit 0> worker=0
+I, [2016-05-26T02:54:20.289287 #24087]  INFO -- : reaped #<Process::Status: pid 24093 exit 0> worker=1
+I, [2016-05-26T02:54:20.289377 #24087]  INFO -- : master complete
+I, [2016-05-26T04:30:59.858218 #27055]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-05-26T04:31:03.335679 #27055]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-05-26T04:31:03.335882 #27055]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=10
+I, [2016-05-26T04:31:03.336003 #27055]  INFO -- : worker=0 spawning...
+I, [2016-05-26T04:31:03.339523 #27055]  INFO -- : worker=1 spawning...
+I, [2016-05-26T04:31:03.340243 #27058]  INFO -- : worker=0 spawned pid=27058
+I, [2016-05-26T04:31:03.340396 #27058]  INFO -- : worker=0 ready
+I, [2016-05-26T04:31:03.341937 #27055]  INFO -- : master process ready
+I, [2016-05-26T04:31:03.342485 #27061]  INFO -- : worker=1 spawned pid=27061
+I, [2016-05-26T04:31:03.342675 #27061]  INFO -- : worker=1 ready

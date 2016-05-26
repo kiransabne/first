@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :weekends
- 
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
 
   resources :restaurants do
@@ -70,6 +68,17 @@ end
                 put "like", to: "pubs#upvote"
                 put "dislike", to: "pubs#downvote"
         end
+  end
+
+  resources :weekends do
+    collection do
+      get 'search'
+    end
+    resources :reviews, except: [:show, :index]
+	member do
+		put "like", to: "weekends#upvote"
+		put "dislike", to: "weekends#downvote"
+	end
   end
 
   get 'welcome/index'

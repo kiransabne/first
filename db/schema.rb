@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160525193439) do
+ActiveRecord::Schema.define(version: 20160526041440) do
 
   create_table "bars", force: :cascade do |t|
     t.string   "name"
@@ -168,8 +168,11 @@ ActiveRecord::Schema.define(version: 20160525193439) do
     t.string   "address"
     t.string   "description"
     t.string   "placesvisited"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "weekendhangout"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
 end

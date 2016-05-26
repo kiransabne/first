@@ -1,5 +1,14 @@
 class WeekendsController < ApplicationController
-  before_action :set_weekend, only: [:show, :edit, :update, :destroy]
+  before_action :set_weekend, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
+  before_action :authenticate_user!, except: [:search, :index, :show]
+
+  def search
+    if params[:search].present?
+       @weekends = Weekend.search(params[:search])
+    else
+       @weekends = Weekend.all
+    end
+  end
 
   # GET /weekends
   # GET /weekends.json
@@ -10,6 +19,13 @@ class WeekendsController < ApplicationController
   # GET /weekends/1
   # GET /weekends/1.json
   def show
+  	@weekend = Weekend.find(params[:id])
+	@reviews = @weekend.reviews
+    if @reviews.blank?
+        @avg_rating = 0
+    else
+      @avg_rating = @reviews.average(:rating).round(2)
+    end
   end
 
   # GET /weekends/new
@@ -50,7 +66,15 @@ class WeekendsController < ApplicationController
       end
     end
   end
-
+    def upvote
+		@weekend.upvote_by current_user
+		redirect_to @weekend
+	end
+		
+	def downvote
+		@weekend.downvote_by current_user
+		redirect_to @weekend
+	end
   # DELETE /weekends/1
   # DELETE /weekends/1.json
   def destroy
@@ -69,6 +93,6 @@ class WeekendsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def weekend_params
-      params.require(:weekend).permit(:Hangouts, :name, :address, :description, :placesvisited)
+      params.require(:weekend).permit(:name, :address, :description, :placesvisited, :weekendhangout)
     end
 end

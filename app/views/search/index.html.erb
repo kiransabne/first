@@ -11,7 +11,7 @@
 		<li><%= link_to "All", search_path(section: "all", q: params[:q]) %></li>
  		<li><%= link_to "Restaurants", search_path(section: "restaurant", q: params[:q]) %></li>
  		<li><%= link_to "Street_foods", search_path(section: "street_food", q: params[:q]) %></li>
- 		<li><%= link_to "Places", search_path(section: "place", q: params[:q]) %></li>
+ 		<li><%= link_to "Weekend Hangouts", search_path(section: "weekend", q: params[:q]) %></li>
 		<li><%= link_to "Touristspots", search_path(section: "touristspot", q: params[:q]) %></li>
 		<li><%= link_to "Bars", search_path(section: "bar", q: params[:q]) %></li>
 		<li><%= link_to "Pubs", search_path(section: "pub", q: params[:q]) %></li>
@@ -25,8 +25,8 @@
  		<%= render :partial => "search/restaurant", :collection => @results[:restaurants], :as => 'restaurant' %>
  		<p>Street_foods: results: <%= @results[:street_foods] %></p>
  		<%= render :partial => "search/street_food", :collection => @results[:street_foods], :as => 'street_food' %>
- 		<p>Places: results: <%= @results[:places] %></p>
- 		<%= render :partial => "search/place", :collection => @results[:places], :as => 'place' %>
+ 		<p>Weekend Hangouts: results: <%= @results[:weekends] %></p>
+ 		<%= render :partial => "search/weekend", :collection => @results[:weekends], :as => 'weekend' %>
 		<p>Touristspots: results: <%= @results[:touristspots] %></p>
  		<%= render :partial => "search/touristspot", :collection => @results[:touristspots], :as => 'touristspot' %>
 		<p>Bars: results: <%= @results[:bars] %></p>
@@ -40,9 +40,9 @@
  	<% elsif params[:section] == "street_food" %>
  		<p>results: <%= @street_foods %></p>
  		<%= render :partial => "search/street_food", :collection => @street_foods, :as => 'street_food' %>
- 	<% elsif params[:section] == "place" %>
- 		<p>results: <%= @places %></p>
- 		<%= render :partial => "search/place", :collection => @places, :as => 'place' %>
+ 	<% elsif params[:section] == "weekend" %>
+ 		<p>results: <%= @weekends %></p>
+ 		<%= render :partial => "search/weekend", :collection => @weekends, :as => 'weekend' %>
 	<% elsif params[:section] == "touristspot" %>
  		<p>results: <%= @touristspots %></p>
  		<%= render :partial => "search/touristspot", :collection => @touristspots, :as => 'touristspot' %>
