@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160526041440) do
+ActiveRecord::Schema.define(version: 20160620192401) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "bars", force: :cascade do |t|
     t.string   "name"
@@ -83,14 +86,16 @@ ActiveRecord::Schema.define(version: 20160526041440) do
     t.string   "email"
     t.string   "parking"
     t.string   "speciality"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "image"
     t.string   "reservation"
     t.string   "delivery"
     t.string   "ambience"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "website"
+    t.string   "restaurantimages", default: [],              array: true
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -144,8 +149,8 @@ ActiveRecord::Schema.define(version: 20160526041440) do
     t.string   "uid"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "votes", force: :cascade do |t|
     t.integer  "votable_id"
@@ -159,8 +164,8 @@ ActiveRecord::Schema.define(version: 20160526041440) do
     t.datetime "updated_at"
   end
 
-  add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
-  add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
+  add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
+  add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
 
   create_table "weekends", force: :cascade do |t|
     t.string   "Hangouts"

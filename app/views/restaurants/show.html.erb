@@ -14,6 +14,20 @@
       <div class="col-md-8">
         <%= image_tag @restaurant.image_url %>   
       <br>
+   <p>Restaurant Images</p>
+     <% @restaurant.restaurantimages.each_with_index do |restaurantimage, index| %>
+	<a data-toggle="modal" data-target="#myModal">
+	 <%= image_tag(restaurantimage.thumb.url) %>
+	</a>
+     <% end %>
+<br>
+	<p>Add More Restaurants Pics</p>
+	<%= form_for @restaurant, url: restaurant_restaurantimages_path(@restaurant), method: :post do |f| %>
+	  <%= f.label :restaurantimage %>
+	  <%= f.file_field :restaurantimages, multiple: true %>
+	  <%= f.submit class: "btn btn-primary" %>
+	<% end %>
+<br>
       <br>
      <% if @reviews.blank? %>
       <h3> No reviews Yet. Be the first to give a reviews and help others</h3>
@@ -67,7 +81,7 @@
     <div class="col-md-4">
      <div class="frm-white"> 
 	 <div class="detail-overview-hearts">
-                <h4><i class="glyphicon glyphicon-heart"></i> <strong><%= @restaurant.get_upvotes.size %></strong> people love it
+                <h4><i class="fa fa-heart fa-2x"></i> <strong><%= @restaurant.get_upvotes.size %></strong> people love it
             </h4></div>
       <%= link_to "Give Heart", like_restaurant_path(@restaurant), class: "btn btn-success", method: :put %>
 
@@ -108,6 +122,12 @@
       <strong>Phone:</strong>
       <%= @restaurant.phone %>
     </p>
+
+    <p>
+      <strong>Website:</strong>
+      <%= @restaurant.website %>
+    </p>
+
 
     <p>
       <strong>Email:</strong>
@@ -166,6 +186,27 @@
 <%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
 </div>
 
+<% @restaurant.restaurantimages.each do |restaurantimage| %>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledb$
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="t$
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+                <%= image_tag(restaurantimage.url) %>
+      </div>
+      <div class="modal-footer">
+                           <a class="btn btn-info modal-prev"> Previous</a>
+                           <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Clos$
+
+      </div>
+    </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<% end %>
 
 
 

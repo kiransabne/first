@@ -11,12 +11,12 @@ class Weekend < ActiveRecord::Base
 	geocoded_by :address
 
 	after_validation :geocode, if: :address_changed?
-	def slug
-    	  name.downcase.gsub(" ", "-")  
-  	end
+#	def slug
+ #   	  name.downcase.gsub(" ", "-")  
+  #	end
 
-  	def to_param
-    	  "#{id}-#{slug}"
-  	end
+  #	def to_param
+   # 	  "#{id}-#{slug}"
+  #	end
 
 end

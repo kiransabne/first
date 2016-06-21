@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 		put "like", to: "restaurants#upvote"
 		put "dislike", to: "restaurants#downvote"
 	end
+    resources :restaurantimages
   end
 
   resources :street_foods do

@@ -1,14 +1,12 @@
-# encoding: utf-8
-
-class ImageUploader < CarrierWave::Uploader::Base
+class RestaurantimageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
+   include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  # storage :file
   storage :azure
+  # storage :fog
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
@@ -25,7 +23,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Process files as they are uploaded:
-   process :resize_to_fit => [585, 408]
+   process resize_to_fit: [500, 400]
   #
   # def scale(width, height)
   #   # do something
@@ -33,12 +31,12 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
    version :thumb do
-     process :resize_to_fill => [318, 180]
+     process resize_to_fit: [50, 50]
    end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
-  # def extension_white_list
+  # def extension_whitelist
   #   %w(jpg jpeg gif png)
   # end
 
