@@ -2,7 +2,7 @@ class RestaurantimagesController < ApplicationController
   before_action :set_restaurant
 
   def create
-    add_more_restaurantimages(restaurantimages_params[:restaurantimages]))
+    add_more_restaurantimages(restaurantimages_params[:restaurantimages])
     flash[:error] = "Failed uploading Restaurant images" unless @restaurant.save
     redirect_to :back
   end
