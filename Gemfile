@@ -32,7 +32,8 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'omniauth-facebook'
 gem 'social-share-button'
 gem 'unicorn'
-
+gem 'fastimage'
+gem 'carrierwave-bombshelter'
 gem 'spring', group: :development
 
 # bundle exec rake doc:rails generates the API under doc/api.

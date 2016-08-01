@@ -26,6 +26,6 @@ production:
   database: socialye_production
   host: localhost
   pool: 5
-  username: pguser
+  username: kiran
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
 

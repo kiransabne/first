@@ -709,3 +709,197 @@ I, [2016-06-20T18:29:24.258768 #47807]  INFO -- : worker=1 ready
 I, [2016-06-20T18:31:52.276920 #47801]  INFO -- : reaped #<Process::Status: pid 47804 exit 0> worker=0
 I, [2016-06-20T18:31:52.277026 #47801]  INFO -- : reaped #<Process::Status: pid 47807 exit 0> worker=1
 I, [2016-06-20T18:31:52.277106 #47801]  INFO -- : master complete
+I, [2016-07-22T19:08:01.878747 #46463]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-22T19:08:08.685000 #46463]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-22T19:08:08.685113 #46463]  INFO -- : worker=0 spawning...
+I, [2016-07-22T19:08:08.686494 #46463]  INFO -- : worker=1 spawning...
+I, [2016-07-22T19:08:08.693719 #46466]  INFO -- : worker=0 spawned pid=46466
+I, [2016-07-22T19:08:08.693819 #46466]  INFO -- : worker=0 ready
+I, [2016-07-22T19:08:08.694566 #46463]  INFO -- : master process ready
+I, [2016-07-22T19:08:08.714605 #46469]  INFO -- : worker=1 spawned pid=46469
+I, [2016-07-22T19:08:08.714756 #46469]  INFO -- : worker=1 ready
+I, [2016-07-23T20:11:24.369619 #46463]  INFO -- : reaped #<Process::Status: pid 46466 exit 0> worker=0
+I, [2016-07-23T20:11:24.369733 #46463]  INFO -- : reaped #<Process::Status: pid 46469 exit 0> worker=1
+I, [2016-07-23T20:11:24.369806 #46463]  INFO -- : master complete
+I, [2016-07-23T20:13:04.187823 #28931]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-23T20:13:10.754958 #28931]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-23T20:13:10.755110 #28931]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-23T20:13:10.755195 #28931]  INFO -- : worker=0 spawning...
+I, [2016-07-23T20:13:10.763493 #28931]  INFO -- : worker=1 spawning...
+I, [2016-07-23T20:13:10.764240 #28931]  INFO -- : master process ready
+I, [2016-07-23T20:13:10.773048 #28942]  INFO -- : worker=0 spawned pid=28942
+I, [2016-07-23T20:13:10.773148 #28942]  INFO -- : worker=0 ready
+I, [2016-07-23T20:13:10.773658 #28944]  INFO -- : worker=1 spawned pid=28944
+I, [2016-07-23T20:13:10.773736 #28944]  INFO -- : worker=1 ready
+I, [2016-07-23T20:17:53.761306 #28931]  INFO -- : reaped #<Process::Status: pid 28942 exit 0> worker=0
+I, [2016-07-23T20:17:53.761382 #28931]  INFO -- : reaped #<Process::Status: pid 28944 exit 0> worker=1
+I, [2016-07-23T20:17:53.761428 #28931]  INFO -- : master complete
+I, [2016-07-23T20:21:51.951583 #29321]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-23T20:21:58.245608 #29321]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-23T20:21:58.245780 #29321]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-23T20:21:58.245912 #29321]  INFO -- : worker=0 spawning...
+I, [2016-07-23T20:21:58.254451 #29321]  INFO -- : worker=1 spawning...
+I, [2016-07-23T20:21:58.255347 #29321]  INFO -- : master process ready
+I, [2016-07-23T20:21:58.264350 #29325]  INFO -- : worker=0 spawned pid=29325
+I, [2016-07-23T20:21:58.264486 #29325]  INFO -- : worker=0 ready
+I, [2016-07-23T20:21:58.265169 #29327]  INFO -- : worker=1 spawned pid=29327
+I, [2016-07-23T20:21:58.265286 #29327]  INFO -- : worker=1 ready
+I, [2016-07-25T13:44:00.288457 #29321]  INFO -- : reaped #<Process::Status: pid 29325 exit 0> worker=0
+I, [2016-07-25T13:44:00.388746 #29321]  INFO -- : reaped #<Process::Status: pid 29327 exit 0> worker=1
+I, [2016-07-25T13:44:00.388841 #29321]  INFO -- : master complete
+I, [2016-07-25T14:18:46.040089 #32601]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-25T14:18:52.338617 #32601]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-25T14:18:52.338794 #32601]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-25T14:18:52.338912 #32601]  INFO -- : worker=0 spawning...
+I, [2016-07-25T14:18:52.346997 #32601]  INFO -- : worker=1 spawning...
+I, [2016-07-25T14:18:52.347741 #32601]  INFO -- : master process ready
+I, [2016-07-25T14:18:52.356302 #32604]  INFO -- : worker=0 spawned pid=32604
+I, [2016-07-25T14:18:52.356423 #32604]  INFO -- : worker=0 ready
+I, [2016-07-25T14:18:52.356995 #32606]  INFO -- : worker=1 spawned pid=32606
+I, [2016-07-25T14:18:52.357101 #32606]  INFO -- : worker=1 ready
+I, [2016-07-25T14:21:56.368760 #32825]  INFO -- : executing ["/home/deploy/.rbenv/versions/2.3.0/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {9=>#<Kgio::UNIXServer:/home/deploy/first/shared/sockets/unicorn.sock>}] (in /home/deploy/first)
+I, [2016-07-25T14:21:56.368836 #32825]  INFO -- : forked child re-executing...
+I, [2016-07-25T14:21:57.272181 #32825]  INFO -- : inherited addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-25T14:21:57.272360 #32825]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-25T14:22:03.232556 #32825]  INFO -- : worker=0 spawning...
+I, [2016-07-25T14:22:03.240863 #32825]  INFO -- : worker=1 spawning...
+I, [2016-07-25T14:22:03.241600 #32825]  INFO -- : master process ready
+I, [2016-07-25T14:22:03.242624 #32837]  INFO -- : worker=0 spawned pid=32837
+I, [2016-07-25T14:22:03.242723 #32837]  INFO -- : worker=0 ready
+I, [2016-07-25T14:22:03.250348 #32839]  INFO -- : worker=1 spawned pid=32839
+I, [2016-07-25T14:22:03.250441 #32839]  INFO -- : worker=1 ready
+I, [2016-07-25T14:22:20.787170 #32825]  INFO -- : reaped #<Process::Status: pid 32837 exit 0> worker=0
+I, [2016-07-25T14:22:20.787238 #32825]  INFO -- : reaped #<Process::Status: pid 32839 exit 0> worker=1
+I, [2016-07-25T14:22:20.787281 #32825]  INFO -- : master complete
+E, [2016-07-25T14:22:20.883108 #32601] ERROR -- : reaped #<Process::Status: pid 32825 exit 0> exec()-ed
+I, [2016-07-25T14:26:11.293354 #32601]  INFO -- : reaped #<Process::Status: pid 32604 exit 0> worker=0
+I, [2016-07-25T14:26:11.393595 #32601]  INFO -- : reaped #<Process::Status: pid 32606 exit 0> worker=1
+I, [2016-07-25T14:26:11.393679 #32601]  INFO -- : master complete
+I, [2016-07-25T14:26:20.654462 #33111]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-25T14:26:26.510815 #33111]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-25T14:26:26.510947 #33111]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-25T14:26:26.511035 #33111]  INFO -- : worker=0 spawning...
+I, [2016-07-25T14:26:26.519335 #33111]  INFO -- : worker=1 spawning...
+I, [2016-07-25T14:26:26.520007 #33111]  INFO -- : master process ready
+I, [2016-07-25T14:26:26.528893 #33114]  INFO -- : worker=0 spawned pid=33114
+I, [2016-07-25T14:26:26.528984 #33114]  INFO -- : worker=0 ready
+I, [2016-07-25T14:26:26.529435 #33116]  INFO -- : worker=1 spawned pid=33116
+I, [2016-07-25T14:26:26.529509 #33116]  INFO -- : worker=1 ready
+I, [2016-07-25T14:46:24.876956 #33111]  INFO -- : reaped #<Process::Status: pid 33114 exit 0> worker=0
+I, [2016-07-25T14:46:24.977183 #33111]  INFO -- : reaped #<Process::Status: pid 33116 exit 0> worker=1
+I, [2016-07-25T14:46:24.977234 #33111]  INFO -- : master complete
+I, [2016-07-25T14:48:21.985074 #33919]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-25T14:48:27.756008 #33919]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-25T14:48:27.756145 #33919]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-25T14:48:27.756223 #33919]  INFO -- : worker=0 spawning...
+I, [2016-07-25T14:48:27.757637 #33919]  INFO -- : worker=1 spawning...
+I, [2016-07-25T14:48:27.758174 #33923]  INFO -- : worker=0 spawned pid=33923
+I, [2016-07-25T14:48:27.758267 #33923]  INFO -- : worker=0 ready
+I, [2016-07-25T14:48:27.766085 #33919]  INFO -- : master process ready
+I, [2016-07-25T14:48:27.776239 #33926]  INFO -- : worker=1 spawned pid=33926
+I, [2016-07-25T14:48:27.776330 #33926]  INFO -- : worker=1 ready
+I, [2016-07-26T16:27:36.476878 #33919]  INFO -- : reaped #<Process::Status: pid 33923 exit 0> worker=0
+I, [2016-07-26T16:27:36.476963 #33919]  INFO -- : reaped #<Process::Status: pid 33926 exit 0> worker=1
+I, [2016-07-26T16:27:36.477015 #33919]  INFO -- : master complete
+I, [2016-07-27T05:23:14.628274 #1750]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-27T05:23:37.172462 #1750]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-27T05:23:37.172605 #1750]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-27T05:23:37.172689 #1750]  INFO -- : worker=0 spawning...
+I, [2016-07-27T05:23:37.190271 #1750]  INFO -- : worker=1 spawning...
+I, [2016-07-27T05:23:37.190966 #1821]  INFO -- : worker=0 spawned pid=1821
+I, [2016-07-27T05:23:37.191068 #1821]  INFO -- : worker=0 ready
+I, [2016-07-27T05:23:37.191940 #1750]  INFO -- : master process ready
+I, [2016-07-27T05:23:37.221293 #1824]  INFO -- : worker=1 spawned pid=1824
+I, [2016-07-27T05:23:37.221431 #1824]  INFO -- : worker=1 ready
+I, [2016-07-27T05:30:40.926343 #1750]  INFO -- : reaped #<Process::Status: pid 1821 exit 0> worker=0
+I, [2016-07-27T05:30:40.926424 #1750]  INFO -- : reaped #<Process::Status: pid 1824 exit 0> worker=1
+I, [2016-07-27T05:30:40.926472 #1750]  INFO -- : master complete
+I, [2016-07-27T05:33:34.166912 #1803]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-27T05:34:02.848324 #1803]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-27T05:34:02.848478 #1803]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-27T05:34:02.848564 #1803]  INFO -- : worker=0 spawning...
+I, [2016-07-27T05:34:02.856838 #1803]  INFO -- : worker=1 spawning...
+I, [2016-07-27T05:34:02.857532 #1803]  INFO -- : master process ready
+I, [2016-07-27T05:34:02.866101 #1844]  INFO -- : worker=0 spawned pid=1844
+I, [2016-07-27T05:34:02.866205 #1844]  INFO -- : worker=0 ready
+I, [2016-07-27T05:34:02.866713 #1846]  INFO -- : worker=1 spawned pid=1846
+I, [2016-07-27T05:34:02.866800 #1846]  INFO -- : worker=1 ready
+I, [2016-07-27T06:29:59.004353 #1803]  INFO -- : reaped #<Process::Status: pid 1844 exit 0> worker=0
+I, [2016-07-27T06:29:59.004442 #1803]  INFO -- : reaped #<Process::Status: pid 1846 exit 0> worker=1
+I, [2016-07-27T06:29:59.004497 #1803]  INFO -- : master complete
+I, [2016-07-27T06:34:31.818255 #1762]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-27T06:34:56.677499 #1762]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-27T06:34:56.677644 #1762]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-27T06:34:56.677722 #1762]  INFO -- : worker=0 spawning...
+I, [2016-07-27T06:34:56.678797 #1762]  INFO -- : worker=1 spawning...
+I, [2016-07-27T06:34:56.696825 #1762]  INFO -- : master process ready
+I, [2016-07-27T06:34:56.705996 #1839]  INFO -- : worker=1 spawned pid=1839
+I, [2016-07-27T06:34:56.706108 #1839]  INFO -- : worker=1 ready
+I, [2016-07-27T06:34:56.706327 #1836]  INFO -- : worker=0 spawned pid=1836
+I, [2016-07-27T06:34:56.706417 #1836]  INFO -- : worker=0 ready
+I, [2016-07-27T06:49:01.408336 #1762]  INFO -- : reaped #<Process::Status: pid 1836 exit 0> worker=0
+I, [2016-07-27T06:49:01.408423 #1762]  INFO -- : reaped #<Process::Status: pid 1839 exit 0> worker=1
+I, [2016-07-27T06:49:01.408507 #1762]  INFO -- : master complete
+I, [2016-07-27T08:11:39.591144 #1803]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-27T08:12:03.572332 #1803]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-27T08:12:03.572467 #1803]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-27T08:12:03.572554 #1803]  INFO -- : worker=0 spawning...
+I, [2016-07-27T08:12:03.589989 #1803]  INFO -- : worker=1 spawning...
+I, [2016-07-27T08:12:03.590985 #1803]  INFO -- : master process ready
+I, [2016-07-27T08:12:03.599987 #1842]  INFO -- : worker=0 spawned pid=1842
+I, [2016-07-27T08:12:03.600093 #1842]  INFO -- : worker=0 ready
+I, [2016-07-27T08:12:03.600611 #1844]  INFO -- : worker=1 spawned pid=1844
+I, [2016-07-27T08:12:03.600693 #1844]  INFO -- : worker=1 ready
+I, [2016-07-27T08:45:10.135326 #1803]  INFO -- : reaped #<Process::Status: pid 1842 exit 0> worker=0
+I, [2016-07-27T08:45:10.135407 #1803]  INFO -- : reaped #<Process::Status: pid 1844 exit 0> worker=1
+I, [2016-07-27T08:45:10.135457 #1803]  INFO -- : master complete
+I, [2016-07-27T11:56:54.093301 #1791]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-27T11:57:17.443214 #1791]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-27T11:57:17.443362 #1791]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-27T11:57:17.443443 #1791]  INFO -- : worker=0 spawning...
+I, [2016-07-27T11:57:17.451702 #1791]  INFO -- : worker=1 spawning...
+I, [2016-07-27T11:57:17.452313 #1831]  INFO -- : worker=0 spawned pid=1831
+I, [2016-07-27T11:57:17.452431 #1831]  INFO -- : worker=0 ready
+I, [2016-07-27T11:57:17.453178 #1791]  INFO -- : master process ready
+I, [2016-07-27T11:57:17.460884 #1834]  INFO -- : worker=1 spawned pid=1834
+I, [2016-07-27T11:57:17.460982 #1834]  INFO -- : worker=1 ready
+I, [2016-07-31T08:06:30.288782 #1791]  INFO -- : reaped #<Process::Status: pid 1834 exit 0> worker=1
+I, [2016-07-31T08:06:30.389295 #1791]  INFO -- : reaped #<Process::Status: pid 1831 exit 0> worker=0
+I, [2016-07-31T08:06:30.389433 #1791]  INFO -- : master complete
+I, [2016-07-31T08:09:04.259404 #11539]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-31T08:09:10.933058 #11539]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-31T08:09:10.935392 #11539]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-31T08:09:10.935484 #11539]  INFO -- : worker=0 spawning...
+I, [2016-07-31T08:09:10.936765 #11539]  INFO -- : worker=1 spawning...
+I, [2016-07-31T08:09:10.937350 #11543]  INFO -- : worker=0 spawned pid=11543
+I, [2016-07-31T08:09:10.937458 #11543]  INFO -- : worker=0 ready
+I, [2016-07-31T08:09:10.940663 #11539]  INFO -- : master process ready
+I, [2016-07-31T08:09:10.948991 #11546]  INFO -- : worker=1 spawned pid=11546
+I, [2016-07-31T08:09:10.949107 #11546]  INFO -- : worker=1 ready
+I, [2016-07-31T08:10:08.543316 #11539]  INFO -- : reaped #<Process::Status: pid 11546 exit 0> worker=1
+I, [2016-07-31T08:10:08.643924 #11539]  INFO -- : reaped #<Process::Status: pid 11543 exit 0> worker=0
+I, [2016-07-31T08:10:08.644060 #11539]  INFO -- : master complete
+I, [2016-07-31T08:10:51.478168 #11714]  INFO -- : Refreshing Gem list
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/searchkick-0.6.3/lib/searchkick/reindex.rb:129: warning: key :searchkick_suggest_index is duplicated and overwritten on line 134
+I, [2016-07-31T08:10:58.171420 #11714]  INFO -- : unlinking existing socket=/home/deploy/first/shared/sockets/unicorn.sock
+I, [2016-07-31T08:10:58.172661 #11714]  INFO -- : listening on addr=/home/deploy/first/shared/sockets/unicorn.sock fd=9
+I, [2016-07-31T08:10:58.172778 #11714]  INFO -- : worker=0 spawning...
+I, [2016-07-31T08:10:58.174204 #11714]  INFO -- : worker=1 spawning...
+I, [2016-07-31T08:10:58.174908 #11718]  INFO -- : worker=0 spawned pid=11718
+I, [2016-07-31T08:10:58.175018 #11718]  INFO -- : worker=0 ready
+I, [2016-07-31T08:10:58.175977 #11714]  INFO -- : master process ready
+I, [2016-07-31T08:10:58.185473 #11721]  INFO -- : worker=1 spawned pid=11721
+I, [2016-07-31T08:10:58.185578 #11721]  INFO -- : worker=1 ready
