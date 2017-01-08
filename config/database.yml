@@ -7,7 +7,7 @@ development:
   pool: 5
   host: localhost
   username: pguser
-  password: Diamond.1
+  password: 
 
 
 test:
@@ -17,7 +17,7 @@ test:
   pool: 5
   host: localhost
   username: pguser
-  password: Diamond.1
+  password: 
 
 
 production:
